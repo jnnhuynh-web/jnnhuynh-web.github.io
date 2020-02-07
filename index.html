@@ -1,54 +1,613 @@
-<!-- this is a comment -->
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jennifer Huynh</title>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Jennifer Huynh</title>
+    <meta name="author" content="Welcome to Jennifer Huynh's Portfolio">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/JH_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/JH_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/JH_logo.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
 
-<body>
-    <h1>Welcome to my GitHub Page!</h1>
-    <hr>
-    <br>
-    <img width="200" src="https://media.licdn.com/dms/image/C4E03AQE5XmgIsjRaRQ/profile-displayphoto-shrink_200_200/0?e=1580947200&v=beta&t=d60cvJ47LbqUTaI1Zk-S6FSogeQjRgqzxG2g_t39sBo" alt="Jennifer's Image">
-    <br>
+<body id="top">
 
-    <h3>Contact Info</h3>
-    <ul>
-      <li><strong>Email: </strong><a href="#">JenniferHuynh@live.ca</a></li>
-      <li><strong>Github: </strong><a href="https://github.com/jnnhuynh-web" target="_blank">jnnhuynh-web</a></li>
-      <li><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/jnnhuynh/" target="_blank">jnnhuynh</a></li>
-      <li><strong>Instagram: </strong><a href="https://www.instagram.com/jnnhuynh/" target="_blank">@jnnhuynh</a></li>
-    </ul>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
-    <table border="1">
-        <tr>
-            <th colspan ="3">Hobbies</th>
-        </tr>
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
 
-        <tr>
-            <strong>
-            <th>Books</th>
-            <th>Movies/Shows</th>
-            <th>Games</th>
-            </strong>
-        </tr>
-        <tr>
-            <td>Alex Rider Series</td>
-            <td>Grey's Anatomy</td>
-            <td>Cards Against Humanity</td>
-        </tr>
-        <tr>
-            <td>The Great Gasby</td>
-            <td>Bob's Burgers</td>
-            <td>Coup</td>
-        </tr>
-        <tr>
-            <td>1984</td>
-            <td>Mr.Robot</td>
-            <td>Pictionary</td>
-        </tr>
-    </table>
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/JH_logo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                <!-- was services -->
+                <li><a class="smoothscroll" href="#skills" title="skills">Skills</a></li>
+                <!-- was works -->
+                <li><a class="smoothscroll" href="#projects" title="projects">Projects</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="https://github.com/jnnhuynh-web" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jnnhuynh/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/jnnhuynh/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+        <div class="row intro-content">
+
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hello, I'm Jennifer Huynh</h3>
+                <h1>
+                    Data Analyzer and<br>
+                    Client Relationship Builder,<br>
+                    Based In Toronto.
+                </h1>
+            </div>
+
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Scroll For More
+                </a>
+            </div>
+
+            <div class="intro-grid"></div>
+            <!-- <div class="intro-pic"></div> -->
+
+        </div> <!-- end row -->
+
+    </section> <!-- end intro -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">About Me</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                    Welcome to my portfolio! I am ecstatic that you are taking the time to look through.
+                    </p>
+
+                    <p>
+                    A little bit about me starting from the beginning, I obtained a B.Tech with Honours from Ryerson University. 
+                    My first position out of school was in project planning for a production manufacturing facility. 
+                    From there, I decided that I wanted to join the fast-paced world of technology and started in Product Support 
+                    at a software company that produces information systems for the manufacturing sector. I quickly learned the ropes 
+                    and became a Customer Experience Specialist, with a portfolio of dedicated clients.
+                    </p>
+
+                    <p>
+                    Since then, I have decided to do a deeper dive into the technology sector and have completed a Bootcamp at 
+                    the University of Toronto in Data Analytics and Visualization. This was an extensive Bootcamp, 
+                    where I have obtained numerous skills including Excel, VBA, Python, JavaScript, and SQL. I am also curious and critical, 
+                    always asking why and how something can be improved, traits that are very well suited for data analytics.
+                    </p>
+
+                    <p>
+                    In addition to hard skills, I have excellent interpersonal skills honed through years of working with clients. 
+                    I believe that my combination of technical skills and emotional intelligence makes me a valuable addition to any team. 
+                    If you are looking for an addition to your data team, and we are not already in contact please reach out.
+                    I’d be happy to chat! Until then, please feel free to explore the rest of my portfolio.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/jnnhuynh/" target="_blank" class="btn btn--primary full-width">LinkedIn</a>
+                </div>
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="#0" class="btn btn--primary full-width">Download Resume</a>
+                </div>
+            </div>
+
+        </div> <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">SEPTEMBER 2018 - JANUARY 2020</p>
+                                <h3 class="item-title">Avanti Computer Systems</h3>
+                                <h5>Customer Experience Specialist</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>• Meet online with customers to demo software and to educate about new features
+                                <br>• Proactively educate customers to aide the creation of efficient workflows within the software
+                                <br>• Utilizes a fantastic personality and excellent communication skills to advocate for customers internally during the prioritization of new features and resolution of defects.
+                                <br>• Proactively manages customer expectations and relationships internally (development, testing) to ensure the best outcomes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">APRIL 2018 - SEPTEMBER 2018</p>
+                                <h3 class="item-title">Avanti Computer Systems</h3>
+                                <h5>Product Support Specialist</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>• Take ownership of the support request life cycle by setting up support process from end-to-end, by collaborating with internal development, quality assurance, and implementation teams to drive tickets to closure
+                                <br>• Excellent in technical and functional problem-solving skills with a keen business sense by providing a rapid response and resolution to complex product issues
+                                <br>• Reproducing and meticulously documenting software defects, making recommendations for product enhancements where appropriate as part of the incident/problem management process
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">MAY 2016 - APRIL 2018</p>
+                                <h3 class="item-title">CCL</h3>
+                                <h5>Technical Projects Specialist</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>• Plan, cost, and oversee up to 6 new projects at one time and ensure assigned team has all necessary information to implement projects.
+                                <br>• Conduct job planning meetings to ensure the team understands deadlines, budget, and the customer’s quality standards. Facilitate decision making based on customer’s end goal to ensure efficient use of time, materials, and equipment.
+                                <br>• Write standard operating procedures for new customers to document success through trial and error.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">SEPTEMBER 2019 - MARCH 2020</p>
+                                <h3 class="item-title">University of Toronto</h3>
+                                <h5>Certificate</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>An intensive 24-week long bootcamp. Analytics with data from CSVs, API interactions, Web Scraping, and Google API using VBA, Python, SLQ, Javascript, R, and HTML/CSS.
+                                    <br>SKILLS LEARNED:
+                                    <br>• Data Manipulation & Visualization: Pandas, Matplotlib, Leaflet.js, Tableau
+                                    <br>• Machine Learning: Hadoop, tensorflow
+                                    <br>• Database: SQL (PostgreSQL), NoSQL (MongoDB)
+                                    <br>• Other: Git, Google Analytics, Flask, command line
+                                    <br>• Agile software development methodology, ZenDesk and Atlassian</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">SEPTEMBER 2012 - APRIL 2016</p>
+                                <h3 class="item-title">Ryerson University</h3>
+                                <h5>Bachelor Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>B.Tech in Graphic Communications Management
+                                <br>• Minored in Human Resource Management, Took electives in Geography.
+                                <br>• Achieved Ryerson Student Scholar Status and Dean’s List on all years of Studies
+                                <br>• Awarded numerious awards and scholarships including the prestigious <a href= "https://www.ryerson.ca/graduate/future-students/financing-your-studies/scholarships-awards/dennis-mock-student-leadership-award/">Dennis Mock Leadership Award</a>, for outstanding voluntary extracurricular contributions to my academic program department.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">2015 - 2016</p>
+                                <h3 class="item-title">University of Virginia</h3>
+                                <h5>Coursera Specialization Certificate</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Courses include:
+                                <br>- Foundations of Business Strategy
+                                <br>- Advanced Business Strategy
+                                <br>- Business Growth Strategy
+                                <br>- Strategic Planning and Execution
+                                <br>- Business Strategy in Practice 
+                                <br>See my certificate <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/W7AX4NH9NVR9" target="_blank">here</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">2015</p>
+                                <h3 class="item-title">University of California, Irvine</h3>
+                                <h5>Coursera Specialization Certificate</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Courses include:
+                                <br>- Initiating and Planning Projects
+                                <br>- Budgeting and Scheduling Projects
+                                <br>- Managing Project Risks and Changes
+                                <br>- Project Management
+                                <br>See my certificate <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/N84RA4G74KTQ" target="_blank">here</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end about-experience -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services / skills
+    ================================================== -->
+    <section id="skills" class="s-services ss-dark target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
+
+                <p class="section-desc">
+                    My passion and goal is to help your company make educated business decisions through data presented in a meaningful approach. 
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Communication</h4>
+                    <p>
+                    Data is nothing without a meaningful presentation both visually and verbally. I have an eye for design and excellent communication skills honed through years of building client relationships.
+                </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Python</h4>
+                    <p>
+                    Skilled in the top coding language for data analytics. Libraries in my toolkit include Pandas, Numpy, and Matplotlibs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">NoSQL, SQL, and SQLAlchemy</h4>
+                    <p>
+                    The ability to mine hidden gems located within large sets of structured, semi-structured, and raw data also requires knowledge of where and how to store and retrieve it. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Javascript/HTML/CSS</h4>
+                    <p>
+                    These tools are not just for creating beautiful websites. I have the know-how to use these tools for web scraping data and creating elegant custom dashboards to summarize the data.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Visualizations</h4>
+                    <p>
+                    Experienced in industry-standard BI tools like Tableau to go from raw data to impressive presentation-ready visualizations quickly.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Excel and VBAs</h4>
+                    <p>
+                    Anything but basic with Excel for smaller datasets. Deep understanding of pivot tables and VBA scripts to automate spreadsheets and data entry.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works / projects
+    ================================================== -->
+    <section id="projects" class="s-works target-section">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Selected Projects</h2>
+                <p class="section-desc">
+                    Here are some of the selected projects I have done lately. Feel free to take a look.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="masonry-wrap">
+
+            <div class="masonry">
+                <div class="grid-sizer"></div>
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="https://raw.githubusercontent.com/jnnhuynh-web/Matplotlib-Challenge/master/Summary%20Bar.png" class="thumb-link" title="Matplotlib" data-size="1050x700">
+                                <img src="https://raw.githubusercontent.com/jnnhuynh-web/Matplotlib-Challenge/master/Summary%20Bar.png">
+                            </a>    
+                            <a href="https://github.com/jnnhuynh-web/Matplotlib-Challenge" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+    
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Matplotlib-Challenge
+                            </h4>
+                            <p class="item-folio__cat">
+                                Python and Matplotlib
+                            </p>
+                        </div>
+    
+                        <div class="item-folio__caption">
+                            <p>
+                            In this study, 250 mice were treated through a variety of drug regimes over the course of 45 days. Their physiological responses were then monitored over the course of that time. The objective is to analyze the data to show how four treatments (Capomulin, Infubinol, Ketapril, and Placebo) compare.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="https://raw.githubusercontent.com/jnnhuynh-web/VBA-Challenge/master/VBA%20Stocks/2016.PNG" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                <img src="https://raw.githubusercontent.com/jnnhuynh-web/VBA-Challenge/master/VBA%20Stocks/2016.PNG">
+                            </a>
+                            <a href="https://github.com/jnnhuynh-web/VBA-Challenge" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                VBA-Challenge
+                            </h4>
+                            <p class="item-folio__cat">
+                                Excel Scripting
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>
+                            The dataset contains a list of stocks and their opening and closing prices for a complete year. This project contains a script that loops through the dataset and appends relevant infomation onto a new sheet.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="https://raw.githubusercontent.com/jnnhuynh-web/python-api-challenge/master/City%20Latitude%20vs.%20Max%20Temp.png" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                <img src="https://raw.githubusercontent.com/jnnhuynh-web/python-api-challenge/master/City%20Latitude%20vs.%20Max%20Temp.png">
+                            </a>
+                            <a href="https://github.com/jnnhuynh-web/python-api-challenge" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Python-API-Challenge
+                            </h4>
+                            <p class="item-folio__cat">
+                                Python with Pandas and Matplotlibs
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>
+                                This repository uses the <a href="https://openweathermap.org/api" target="_blank">Open Weather Map API</a>, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="https://raw.githubusercontent.com/jnnhuynh-web/sqlalchemy-challenge/master/Precipitation%20in%20Hawaii%20from%202016-08-23%20to%202017-08-23.png" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                <img src="https://raw.githubusercontent.com/jnnhuynh-web/sqlalchemy-challenge/master/Precipitation%20in%20Hawaii%20from%202016-08-23%20to%202017-08-23.png">
+                            </a>
+                            <a href="https://github.com/jnnhuynh-web/sqlalchemy-challenge" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                SQLAlchemy-Challenge
+                            </h4>
+                            <p class="item-folio__cat">
+                                SQL and Python
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>This repository includes an analysis of climate patterns in a popular vacation spot, Honolulu, Hawaii.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-work -->
+
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Get In Touch</h2>
+            </div>
+        </div>
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="column large-full">
+                <p class="contact-email">
+                    <a href="mailto:jenniferhuynh1331@gmail.com">jenniferhuynh1331@gmail.com</a>
+                </p>
+
+                <p class="section-desc">
+                I'm happy to connect. Let's work together and build something awesome.
+                <a href="mailto:jenniferhuynh1331@gmail.com">Email Me</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+
+            <div class="column large-5 medium-full contact-phone">
+                <h4>Call Me</h4>
+                <a href="tel:197-543-2345">+1 226 500 1331</a>
+            </div>
+
+            <div class="column large-7 medium-full contact-social">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="https://github.com/jnnhuynh-web" target="_blank" title="Github">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/jnnhuynh/" target="_blank" title="LinkedIn">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/jnnhuynh/" target="_blank" title="Instagram">Instagram</a></li>
+                </ul>
+            </div>
+
+        </div> <!-- end contact-infos -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Epitome 2019</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>            
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-</html>
